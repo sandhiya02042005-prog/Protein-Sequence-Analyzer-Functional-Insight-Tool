@@ -48,11 +48,5 @@ plt.bar(composition.keys(), composition.values())
 plt.title("Amino Acid Composition")
 plt.xticks(rotation=90)
 plt.show()
-def predict_function(hydro_score):
-    if hydro_score > 0.4:
-        return "Likely membrane protein"
-    else:
-        return "Likely globular protein"
 
-print(predict_function(score))
 
